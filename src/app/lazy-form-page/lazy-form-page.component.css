@@ -1,0 +1,200 @@
+.form-page-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #474747;
+}
+
+.form-container {
+    min-width: 24rem;
+    min-height: 30rem;
+    box-sizing: border-box;
+    padding: 1.5rem;
+    background-color: #ffffff;
+}
+
+.form-container p {
+    margin-bottom: 1rem;
+    margin-top: 0;
+    font-size: 1.5rem;
+    z-index: 1;
+}
+
+.inputs-container {
+    display: flex;
+    height: 19.75rem;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.inputs-container input {
+    background-color: transparent;
+    width: 100%;
+    font-size: 14px;
+    padding: 1rem;
+    border: 2px solid #EDE8F7;
+    box-sizing: border-box;
+    border-radius: 6px;
+    z-index: 2;
+}
+
+.inputs-container input:hover, .inputs-container input:focus {
+    border: 2px solid #C0BAD5;
+    outline: none;
+}
+
+
+.inputs-container input.input-invalid {
+
+    border: 2px solid #F8478D;
+
+    padding-right: calc(1.5em + 0.75rem);
+    background-image: url(../../assets/warning.svg);
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1.5rem;
+}
+
+.inputs-container input.input-valid {
+    border: 2px solid #13C98A;
+    padding-right: calc(1.5em + 0.75rem);
+    background-image: url(../../assets/check.svg);
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1.5rem;
+}
+
+.inputs-container textarea {
+    height: 6.25rem;
+    width: 100%;
+    font-size: 14px;
+    border: 2px solid #EDE8F7;
+    padding: 1rem;
+    resize: none;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+.inputs-container textarea:hover, .inputs-container textarea:focus {
+    border: 2px solid #C0BAD5;
+    outline: none;
+}
+
+
+.inputs-container select {
+    width: 100%;
+    font-size: 14px;
+    border: 2px solid #EDE8F7;
+    padding: 1rem;
+    resize: none;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+.inputs-container select:hover {
+    border: 2px solid #C0BAD5
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.button-container button {
+    font-size: 1rem;
+    font-family: "Letosans Bold";
+    color: #ffffff;
+}
+
+#clear-btn {
+    height: 3rem;
+    width: 8rem;
+    background: #BDBDBD;
+    border-width: 0;
+    border-radius: 44px;
+}
+
+#submit-btn {
+    height: 3rem;
+    width: 12rem;
+    background: #13C98A;
+    border-width: 0;
+    border-radius: 44px;
+}
+
+#submit-btn:hover {
+    background-color: #2E09B6;
+}
+
+#submit-btn:disabled {
+    background-color: #BDBDBD;
+}
+
+
+
+.form-notice-container {
+    height: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.form-notice {
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+
+    font-size: 0.75rem;
+    color: #ffffffd0;
+    width: fit-content;
+    position: relative;
+    bottom: 3rem;
+    border-color: #333333d0;
+    border-radius: 6px;
+    background: #333333d0;
+    padding: 10px 15px 11px 16px;
+    z-index: 2;
+}
+
+.form-notice::after {
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 10px;
+    border-top: 0.33rem solid;
+    border-top-color: inherit;
+    border-left: 0.5rem solid transparent;
+    border-right: 0.5rem solid transparent;
+}
+
+.mini-placeholder-container {
+    height: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.mini-placeholder-container .mini-placeholder {
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+
+    font-size: 0.75rem;
+    color: #9B99AA;
+    width: fit-content;
+    position: relative;
+    padding-top: 0.2rem;
+    padding-left: 1.12rem;
+    z-index: 1;
+}

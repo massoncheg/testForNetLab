@@ -1,0 +1,44 @@
+.home-page-container {
+  margin: 5.5rem 4.5rem 5.5rem 4.5rem;
+}
+
+.filled-form-data {
+  width: fit-content;
+  padding: 1rem;
+  border: 2px solid #EDE8F7;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+
+
+.filled-form-block {
+  display: flex;
+  align-items:center;
+}
+
+.filled-form-block-head {
+  width: fit-content;
+}
+
+.filled-form-block-value {
+  width: fit-content;
+  padding: 1rem;
+  border: 2px solid #EDE8F7;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+
+.home-page-container .btn {
+  color: #ffffff;
+  font-size: 1rem;
+  margin-top: 21px;
+  width: 14.5rem;
+  height: 3rem;
+  border: 0;
+  border-radius: 2.75rem;
+  background-color: #16c98a;
+}
+
+.home-page-container .btn:hover {
+  background-color: #2E09B6;
+}

@@ -1,0 +1,22 @@
+<div class=home-page-container>
+  <p>
+    Form data:
+  </p>
+
+  <div class=filled-form-container *ngIf="isFormFilled">
+    <p>Имя: {{userData.name}}</p>
+    <p>E-mail: {{userData.email}}</p>
+    <p>Тема: {{userData.topic}}</p>
+    <p>Сообщение: {{userData.message}}</p>
+
+    <button routerLink="form/edit" class=btn>Изменить данные формы</button>
+  </div>
+
+
+  <div *ngIf="!isFormFilled">
+    <p>
+      Форма пока не заполнена
+    </p>
+    <button routerLink="form" class=btn>Заполнить форму</button>
+  </div>
+</div>

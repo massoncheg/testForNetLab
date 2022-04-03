@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "LetoSans";
+  src: url("assets/LetoSans-Regular.woff");
+}
+
+@font-face {
+  font-family: "LetoSans Bold";
+  src: url("assets/LetoSans-Bold.woff");
+}
+
+* {
+  font-family: "LetoSans";
+}
+
+body {
+  margin: 0;
+}
